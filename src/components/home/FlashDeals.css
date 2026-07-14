@@ -1,0 +1,30 @@
+.flash-deals {
+  padding: var(--space-8) var(--space-5);
+}
+
+.flash-deals__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--space-4);
+  margin-bottom: var(--space-6);
+}
+
+.flash-deals__icon {
+  color: var(--color-accent);
+  margin-right: 6px;
+  vertical-align: -2px;
+}
+
+.flash-deals__timer {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  background: var(--color-navy-900);
+  color: #fff;
+  padding: 10px 16px;
+  border-radius: var(--radius-md);
+  font-weight: 600;
+  font-size: 1rem;
+}

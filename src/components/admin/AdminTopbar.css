@@ -1,0 +1,53 @@
+.admin-topbar {
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 var(--space-6);
+  background: var(--color-surface);
+  border-bottom: 1px solid var(--color-border);
+  position: sticky;
+  top: 0;
+  z-index: var(--z-nav);
+}
+
+.admin-topbar h1 {
+  font-size: 1.2rem;
+}
+
+.admin-topbar__menu {
+  display: none;
+  font-size: 1.3rem;
+  margin-right: var(--space-3);
+}
+
+.admin-topbar__profile {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+.admin-topbar__profile img {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.admin-topbar__name {
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+.admin-topbar__logout {
+  color: var(--color-ink-faint);
+  font-size: 1.1rem;
+  padding: 8px;
+  border-radius: 50%;
+}
+.admin-topbar__logout:hover {
+  background: var(--color-danger-soft);
+  color: var(--color-danger);
+}
+
+@media (max-width: 960px) {
+  .admin-topbar__menu { display: block; }
+  .admin-topbar__name { display: none; }
+}

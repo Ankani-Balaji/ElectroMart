@@ -1,0 +1,70 @@
+:root {
+  /* Color */
+  --color-bg: #fafbfc;
+  --color-surface: #ffffff;
+  --color-surface-alt: #f2f4f7;
+  --color-ink: #0b1120;
+  --color-ink-soft: #5b6472;
+  --color-ink-faint: #8b93a1;
+  --color-border: #e4e7ec;
+  --color-border-strong: #d0d5dd;
+
+  --color-primary: #2f6bff;
+  --color-primary-dark: #1c4bd6;
+  --color-primary-soft: #e8f0ff;
+
+  --color-accent: #ff5a3c;
+  --color-accent-soft: #ffe9e4;
+
+  --color-success: #1ba672;
+  --color-success-soft: #e3f7ee;
+  --color-warning: #d98c00;
+  --color-warning-soft: #fef3e0;
+  --color-danger: #e0392b;
+  --color-danger-soft: #fdeae8;
+
+  --color-navy-900: #0b1120;
+  --color-navy-800: #131c31;
+  --color-navy-700: #1c2842;
+
+  /* Typography */
+  --font-display: "Space Grotesk", "Inter", sans-serif;
+  --font-body: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  /* Spacing scale */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+  --space-9: 96px;
+
+  /* Radius */
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-pill: 999px;
+
+  /* Shadow */
+  --shadow-sm: 0 1px 2px rgba(11, 17, 32, 0.06), 0 1px 1px rgba(11, 17, 32, 0.04);
+  --shadow-md: 0 8px 24px rgba(11, 17, 32, 0.08);
+  --shadow-lg: 0 20px 48px rgba(11, 17, 32, 0.14);
+  --shadow-glow: 0 0 0 4px var(--color-primary-soft);
+
+  /* Layout */
+  --container-max: 1280px;
+  --nav-height: 72px;
+  --z-nav: 100;
+  --z-modal: 1000;
+  --z-toast: 1100;
+
+  /* Motion */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --duration-fast: 150ms;
+  --duration-base: 250ms;
+  --duration-slow: 450ms;
+}

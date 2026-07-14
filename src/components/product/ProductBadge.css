@@ -1,0 +1,36 @@
+.product-badge {
+  display: inline-flex;
+  align-items: center;
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  padding: 4px 9px;
+  border-radius: var(--radius-sm);
+  line-height: 1.4;
+}
+
+.product-badge--accent {
+  background: var(--color-accent-soft);
+  color: var(--color-accent);
+}
+.product-badge--primary {
+  background: var(--color-primary-soft);
+  color: var(--color-primary-dark);
+}
+.product-badge--success {
+  background: var(--color-success-soft);
+  color: var(--color-success);
+}
+.product-badge--warning {
+  background: var(--color-warning-soft);
+  color: var(--color-warning);
+}
+.product-badge--danger {
+  background: var(--color-danger-soft);
+  color: var(--color-danger);
+}
+.product-badge--neutral {
+  background: var(--color-surface-alt);
+  color: var(--color-ink-soft);
+}

@@ -1,0 +1,105 @@
+.products-page {
+  padding: var(--space-6) var(--space-5) var(--space-9);
+}
+
+.products-page__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--space-4);
+  margin-bottom: var(--space-6);
+}
+.products-page__header h1 {
+  font-size: 1.7rem;
+}
+.products-page__search {
+  min-width: 260px;
+}
+
+.products-page__layout {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: var(--space-6);
+  align-items: flex-start;
+}
+
+.products-filters {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-5);
+  position: sticky;
+  top: calc(var(--nav-height) + var(--space-4));
+}
+
+.products-filters__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--space-4);
+}
+.products-filters__head h3 {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 1rem;
+}
+.products-filters__reset {
+  font-size: 0.8125rem;
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+.products-filters__group {
+  padding: var(--space-4) 0;
+  border-top: 1px solid var(--color-border);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.products-filters__group h4 {
+  font-family: var(--font-body);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--color-ink-soft);
+  margin-bottom: 6px;
+}
+.products-filters__group button {
+  text-align: left;
+  padding: 8px 10px;
+  border-radius: var(--radius-sm);
+  font-size: 0.875rem;
+  color: var(--color-ink);
+}
+.products-filters__group button:hover {
+  background: var(--color-surface-alt);
+}
+.products-filters__group button.is-active {
+  background: var(--color-primary-soft);
+  color: var(--color-primary-dark);
+  font-weight: 600;
+}
+
+.products-filters__group input[type="range"] {
+  width: 100%;
+  accent-color: var(--color-primary);
+}
+
+.products-filters__group select {
+  width: 100%;
+  padding: 10px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  font-size: 0.875rem;
+}
+
+@media (max-width: 900px) {
+  .products-page__layout {
+    grid-template-columns: 1fr;
+  }
+  .products-filters {
+    position: static;
+  }
+}

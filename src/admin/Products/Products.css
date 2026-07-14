@@ -1,0 +1,37 @@
+@import "../../components/admin/AdminTable.css";
+
+.admin-products__toolbar {
+  display: flex;
+  gap: var(--space-3);
+  margin-bottom: var(--space-5);
+  flex-wrap: wrap;
+}
+.admin-products__toolbar .search-bar {
+  flex: 1;
+  min-width: 220px;
+}
+
+.admin-products__select {
+  padding: 0 var(--space-4);
+  border-radius: var(--radius-pill);
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  font-size: 0.875rem;
+}
+
+.admin-products__cell {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+.admin-products__cell img {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-sm);
+  object-fit: cover;
+  background: var(--color-surface-alt);
+}
+.admin-products__cell div { display: flex; flex-direction: column; }
+.admin-products__title { font-weight: 600; }
+
+.admin-products__category { text-transform: capitalize; }

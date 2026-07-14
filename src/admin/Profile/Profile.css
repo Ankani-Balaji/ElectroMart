@@ -1,0 +1,40 @@
+.admin-profile__header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-5);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-5);
+  margin-bottom: var(--space-5);
+}
+.admin-profile__header img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.admin-profile__header > div { flex: 1; }
+.admin-profile__header h2 { font-size: 1.2rem; }
+.admin-profile__header p { display: flex; align-items: center; gap: 6px; font-size: 0.875rem; }
+
+.admin-profile__card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-5);
+  max-width: 420px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+.admin-profile__card h3 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1.05rem;
+}
+
+@media (max-width: 560px) {
+  .admin-profile__header { flex-wrap: wrap; }
+}

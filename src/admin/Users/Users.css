@@ -1,0 +1,14 @@
+@import "../../components/admin/AdminTable.css";
+
+.admin-users__cell {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  font-weight: 600;
+}
+.admin-users__cell img {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+}
