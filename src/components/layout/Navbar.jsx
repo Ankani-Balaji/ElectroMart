@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
-import { FiHeart, FiShoppingCart, FiUser, FiMenu, FiX, FiSearch, FiLogOut, FiPackage, FiHome } from "react-icons/fi";
+import { FiHeart, FiShoppingCart, FiUser, FiMenu, FiX, FiSearch, FiLogOut, FiPackage, FiHome, FiShield } from "react-icons/fi";
 import { logout } from "../../redux/slices/authSlice";
 import { selectCartCount } from "../../redux/slices/cartSlice";
 import { selectWishlistItems } from "../../redux/slices/wishlistSlice";
@@ -95,7 +95,9 @@ const Navbar = () => {
             <FiShoppingCart />
             {cartCount > 0 && <span className="navbar__badge">{cartCount}</span>}
           </Link>
-
+           <Link to="/admin/login" className="navbar__icon-btn" aria-label="Admin-Login">
+            <FiShield />
+          </Link>
           {isAuthenticated ? (
             <div className="navbar__profile">
               <button className="navbar__icon-btn navbar__avatar-btn" aria-label="Account menu">
