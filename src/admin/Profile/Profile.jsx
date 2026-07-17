@@ -44,7 +44,6 @@ const AdminProfile = () => {
   return (
     <div className="admin-profile">
       <div className="admin-profile__header">
-        <img src={account?.avatar} alt={account?.name} />
         <div>
           <h2>{account?.name}</h2>
           <p className="text-soft"><FiMail /> {account?.email}</p>
