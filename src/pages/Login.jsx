@@ -61,7 +61,7 @@ const Login = () => {
         <p className="auth-card__footer">
           Don't have an account? <Link to="/register">Create one</Link>
         </p>
-        <p className="auth-card__hint">Demo login: asha@example.com / password123</p>
+        <p className="auth-card__hint">Demo login: name@example.com / password123</p>
       </div>
     </div>
   );

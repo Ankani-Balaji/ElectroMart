@@ -12,4 +12,4 @@ export const PAYMENT_METHODS = {
   COD: "cod",
 };
 
-export const RAZORPAY_KEY_ID = "`rzp_test_T8wRFihrGswEuk`"; // Razorpay standard public test key
+export const RAZORPAY_KEY_ID = "rzp_test_T8wRFihrGswEuk";
